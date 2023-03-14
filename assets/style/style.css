@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+i {
+	margin-right: 10px;
+}/* ---------horizontal-navbar-menu-----------*/
+#navbar-animmenu {
+	background: white;
+	float: left;
+	display: flex;
+	overflow: hidden;
+	position: absolute;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 9px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 9px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 9px -3px rgba(0,0,0,0.75);
+-webkit-border-bottom-right-radius: 30px;
+-webkit-border-bottom-left-radius: 30px;
+-moz-border-radius-bottomright: 30px;
+-moz-border-radius-bottomleft: 30px;
+border-bottom-right-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+#navbar-animmenu img{
+	width: 100px;
+	height: auto;
+	margin-left: 40px;
+	object-fit: cover;
+	object-position: center;
+	cursor: pointer;
+}
+
+#navbar-animmenu ul{
+	padding: 0px;
+	margin: 0px;
+    float: right;
+	/* margin-right: 2rem; */
+  
+}
+
+#navbar-animmenu ul li a i{
+	margin-right: 10px;
+}
+
+#navbar-animmenu li {
+	list-style-type: none;
+	float: left;
+	cursor: pointer;
+}
+
+#navbar-animmenu ul li a{
+	color: #8AB966;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 45px;
+    display: block;
+    padding: 0px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+
+#navbar-animmenu>ul>li.active>a{
+	color: white;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+
+
+
+#navbar-animmenu a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10%;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+#navbar-animmenu .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 10px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #8AB966;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+
+
+
+/* Navbar Style End */
+
+
+
+/* Home Style  Start */
+
+.home{
+background-image: url(/assets/images/background.jpg);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	/* margin-top: 5rem; */
+}
+
+.home .homeupside{
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	align-items: start;
+justify-content: flex-end;
+	flex-direction: column;
+	/* position: absolute; */
+	height: 100%;
+	
+	
+
+}
+
+.home .homeupside .homeHeading{
+	width: 60%;
+	color: white;
+	padding:0 0 2rem 4rem;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+
+.homebtn{
+	padding:0 0 2rem 4rem;
+	display: flex;
+	width: 20%;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.homebtn .hbtn1 , .homebtn .hbtn2,.donate{
+	
+	
+	color: white;
+	font-size: 1rem;
+	font-weight: 900;
+	
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+.homebtn .hbtn1{
+	padding: 0.45rem 1rem;
+background-color: transparent;
+border-width: 3px;
+}
+
+
+.homebtn .hbtn2{
+	padding: 0.6rem 1rem;
+	border: none;
+	background-color: #8AB966;
+}
+
+.donate a{
+	text-decoration: none;
+	color: white;
+	font-family:'Courier New', Courier, monospace;
+	font-weight: 900;
+	padding: 0.8rem 1.5rem;
+	border: none;
+	background-color: #8AB966;
+	border-radius: 5px;
+	letter-spacing: 4px;
+}
+
