@@ -143,3 +143,5 @@ function prev3(){
 //autoPlay
 
 setInterval(next3, 15000);
+
+

@@ -392,6 +392,9 @@ border-width: 3px;
 	background-color: #8AB966;
 	padding: 1rem 2rem;
 	height: 23rem;
+	-webkit-box-shadow: -1px 2px 23px -8px rgba(0,0,0,1);
+-moz-box-shadow: -1px 2px 23px -8px rgba(0,0,0,1);
+box-shadow: -1px 2px 23px -8px rgba(0,0,0,1);
 
 }
 
@@ -616,4 +619,167 @@ border-width: 3px;
 	text-transform: uppercase;
 	text-align: center; /* adjust alignment as needed */
 	margin-bottom: 20px; /* adjust margin as needed */
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+	display: flex;
+	justify-content:space-evenly;
+	/* align-items: center; */
+	height: 20rem;
+	padding-top: 1.5rem;
+	background-color: #8AB966;
+}
+
+footer .firstDiv img{
+	width: 120px;
+	/* height: 100px; */
+	margin-bottom: 1rem;
+	filter: brightness(500%);
+
+}
+footer .firstDiv p{
+	width: 10rem;
+	/* padding: 0 2rem; */
+	text-align: justify;
+	font-size: 12px;
+	color: #FFF;
+
+}
+
+.donateF a{
+	text-decoration: none;
+	color: white;
+	font-family:'Courier New', Courier, monospace;
+	font-weight: 900;
+	padding: 0.8rem 1.5rem;
+	border: none;
+	background-color: red;
+	border-radius: 5px;
+	letter-spacing: 4px;
+}
+
+.donateF{
+	margin-top: 2rem;
+}
+
+
+.secondDiv{
+	margin-top: 2rem;
+	padding: 0 6rem;
+}
+
+.secondDiv ul li{
+	line-height: 2rem;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 2px 4px;
+
+	
+}
+
+.secondDiv ul li:hover{
+	background-color: #86a86b;
+}
+.secondDiv ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+footer .thirdDiv{
+	width: 15rem;
+	margin-top: 2rem;
+}
+
+footer .thirdDiv .socialIcon{
+
+	display: flex;
+	justify-content: space-between;
+	width: 10rem;
+	align-items: center;
+	margin-top: 1rem;
+}
+footer .thirdDiv .socialIcon img{
+	width: 30px;
+	cursor: pointer;
+	/* background-color: #FFF; */
+	filter: brightness(100%);
+	
+}
+
+
+footer .thirdDiv .phone{
+	padding: 1rem 0;
+	color: white;
+	font-size: 16px;
+}
+
+footer .thirdDiv .address{
+	padding: 0.5rem 0;
+	color: white;
+	font-size: 14px;
+	text-align: justify;
+}
+
+
+
+
+
+/* About_Us page style */
+
+
+.ourMission{
+
+	padding: 2rem 3rem;
+
+}
+
+.ourMission h4{
+	font-size: 32px;
+	padding: 1rem 2rem;
+	background-color: #8AB966;
+	color: #FFF;
+	letter-spacing: 3px;
+	width: 30%;
+	text-align: center;
+
+}
+
+
+.ourMission .ourMissionContent{
+	height: 28rem;
+	margin-top: 2rem;
+}
+.ourMission .ourMissionContent p{
+	font-size: 1rem;
+	padding: 2rem 0;
+	text-align: justify;
+	align-self: center;
+	justify-self: center;
+	width: 48%;
+	background-color: #8AB966;
+	padding: 1rem 2rem;
+	height: 100%;
+	color: #edecec;
+	line-height: 1.25rem;
+	
+
+
+}
+
+.ourMission .ourMissionContent{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ourMission .ourMissionContent img{
+	width: 48%;
+	height: 100%;
 }
